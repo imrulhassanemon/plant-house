@@ -5,36 +5,34 @@ const Navbar = () => {
 
   return (
     <nav className="w-full bg-white shadow-sm">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-6 sm:py-4">
         {/* Logo */}
-        <div className="flex items-center gap-2">
-          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-green-100">
-            <Leaf className="text-green-600" size={24} />
+        <div className="flex shrink-0 items-center gap-2">
+          <div className="flex h-9 w-9 items-center justify-center rounded-full bg-green-100 sm:h-10 sm:w-10">
+            <Leaf className="text-green-600" size={22} />
           </div>
 
-          <span className="text-xl font-bold text-green-700">
+          <span className="text-lg font-bold text-green-700 sm:text-xl">
             GreenLife
           </span>
         </div>
 
         {/* Right Side */}
-        <div className="flex items-center gap-4">
-
+        <div className="flex items-center gap-2 sm:gap-4">
           {/* Coin */}
-          <div className="flex items-center gap-2 rounded-full bg-yellow-50 px-4 py-2">
-            <Coins size={20} className="text-yellow-500" />
-            <span className="font-semibold text-gray-700">
+          <div className="flex items-center gap-1.5 rounded-full bg-yellow-50 px-3 py-2 sm:gap-2 sm:px-4">
+            <Coins size={18} className="text-yellow-500 sm:h-5 sm:w-5" />
+
+            <span className="text-sm font-semibold text-gray-700 sm:text-base">
               {coins}
             </span>
           </div>
 
           {/* Button */}
-          <button className="flex items-center gap-2 rounded-lg bg-green-600 px-5 py-2.5 font-semibold text-white transition hover:bg-green-700">
-            <Leaf size={18} />
-            Plant Now
+          <button className="flex items-center gap-1.5 rounded-lg bg-green-600 px-3 py-2 text-sm font-semibold text-white transition hover:bg-green-700 sm:gap-2 sm:px-5 sm:py-2.5 sm:text-base">
+            <Leaf size={17} />
+            <span>Plant Now</span>
           </button>
-
         </div>
       </div>
     </nav>
