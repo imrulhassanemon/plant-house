@@ -1,4 +1,5 @@
 import { Suspense, useState } from "react";
+import  { Toaster } from 'react-hot-toast';
 import "./App.css";
 import Banner from "./componet/Banner";
 import Navbar from "./componet/Navbar";
@@ -33,7 +34,8 @@ function App() {
           </div>
         }
       >
-        <Plants allPlantsPromise={allPlantsPromise()}></Plants>
+        <Toaster />
+        <Plants setCoins={setCoins} coins={coins} allPlantsPromise={allPlantsPromise()}></Plants>
       </Suspense>
     </>
   );
