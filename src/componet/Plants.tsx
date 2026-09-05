@@ -1,6 +1,7 @@
 import toast from "react-hot-toast";
 import { use } from "react";
 import { useState } from "react";
+import type { Dispatch, SetStateAction } from "react";
 
 import type { Tree } from "../types";
 
@@ -9,8 +10,8 @@ import SelectedCard from "./SelectedCard";
 
 export interface PlantsProps {
   allPlantsPromise: Promise<Tree[]>;
-  setCoins: (price: number) => void;
-  coins: boolean;
+  setCoins: Dispatch<SetStateAction<number>>;
+  coins: number;
 }
 
 export default function Plants({

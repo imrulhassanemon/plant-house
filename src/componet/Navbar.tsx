@@ -62,7 +62,7 @@ export interface NavbarProps {
 
 export default function Navbar({ coins, setCoins }: NavbarProps) {
   const increaseCoin = () => {
-    setCoins((prevCoins) => prevCoins + 500);
+    setCoins((prevCoins) => prevCoins + 1000);
   };
 
   return (
