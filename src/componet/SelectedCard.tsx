@@ -2,20 +2,6 @@ import { Trash2 } from "lucide-react";
 
 import type { Tree } from "../types";
 
-// interface SelectedCardProps {
-//   name: string;
-//   position: string;
-//   image?: string;
-//   onDelete?: () => void;
-// }
-
-// const SelectedCard = ({
-//   name,
-//   position,
-//   image,
-//   onDelete,
-// }: SelectedCardProps) => {
-
 export interface SelectedCardProps {
   select: Tree;
   handleRemoved: (tree: Tree) => void;
@@ -25,7 +11,6 @@ export default function SelectedCard({
   select,
   handleRemoved,
 }: SelectedCardProps) {
-  console.log(select);
 
   const removeItems = () => {
     handleRemoved(select);

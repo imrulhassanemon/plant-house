@@ -63,7 +63,7 @@ export default function Plants({
       <div>
         <div className="mx-auto flex max-w-5/6 items-center justify-between rounded-2xl bg-white px-6 py-4 shadow-sm">
           {/* Left */}
-          <h2 className="text-xl font-bold text-gray-800">Hello world</h2>
+          <h2 className="text-xl font-bold text-green-700">Green Life</h2>
 
           {/* Tabs */}
           <div className="flex items-center gap-2 rounded-xl bg-gray-100 p-1">
